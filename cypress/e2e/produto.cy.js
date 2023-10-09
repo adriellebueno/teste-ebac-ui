@@ -25,5 +25,10 @@ describe('Funcionalide na pagina de produtos', () => {
 
 
     });
+
+    it.only('Deve adicionar produto ao carrinho = Comando customizado', () => {
+        cy.addProdutos('Atlas Fitness Tank', 'm', 'black', 2)
+        
+    });
 });
 
